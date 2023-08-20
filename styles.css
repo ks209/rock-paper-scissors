@@ -1,0 +1,109 @@
+*{
+    margin:0 0 0 0;
+    box-sizing: border-box;
+    padding: 0 0 0 0;
+    font-family: 'neucha',cursive;
+}
+
+h2{
+    color: #F7E987;
+}
+
+img{
+    height: 200px;
+    width: 300px;
+}
+
+main{
+    background-color:#252B48;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    gap: 1vmax;
+    padding: 4vh;
+    background-color: #1b3262;
+    color: #5B9A8B;
+}
+
+.bg{
+    height: 100%    
+}
+
+.score{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+#play{
+    display: flex;
+    height: 100%;
+}
+
+.computerside{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.computerside>div{
+    height: 33%;
+}
+
+.computerside>div{
+    display: none;
+}
+
+
+
+
+
+.playerside{
+    width: 50%;
+    height: fit-content;
+}
+
+.playerside>div{
+    display: flex;
+    justify-content: center;
+    height: 33%;
+}
+
+
+.playerside>div>img:hover{
+    height: 250px;
+    width: 350px;
+}
+
+.win{
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+    color: #F7E987;
+    background-color: rgb(0, 109, 100);
+    padding: 40px;
+    z-index: 9999;
+    border-radius: 30%;
+}
+
+#pwin,#cwin,#draw{
+    display: none;
+}
+
+
+audio{
+    display: none;
+    background-color: black;
+    color: black;
+}

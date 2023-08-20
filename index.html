@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Neucha&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <audio controls autoplay loop>
+            <source src="./Krisu - Vibrant Emotions.mp3" type="audio/wav" />
+          </audio>
+        <div class="bg">
+            <div class="title">
+                <h1>Rock</h1><h1>Paper</h1><h1>Scissors</h1><h1>Game</h1>
+            </div>
+            <div class="score"><h2 id="computerscore">Computer's Score 0</h2><h2 id="playerscore"> Player's Score 0 </h2></div>
+            <div id="play">
+            <div class="computerside">
+                <div id="crock" class="rps"><img src="./rock.png" alt=""></div>
+                <div id="cpaper" class="rps"><img src="./paper.png" alt=""></div>
+                <div id="cscissors" class="rps"><img src="./scissors.png" alt=""></div>
+            </div>
+            <div class="playerside">
+                <div id="prock" class="rps"><img src="./rock.png" alt=""></div>
+                <div id="ppaper" class="rps"><img src="./paper.png" alt=""></div>
+                <div id="pscissors" class="rps"><img src="./scissors.png" alt=""></div>
+            </div>
+        </div>
+        <div class="win">
+            <h1 id="pwin">Player Wins</h1>
+            <h1 id="cwin">Computer Wins</h1>
+            <h1 id="draw">Draw</h1>
+        </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
