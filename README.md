@@ -61,5 +61,5 @@ Game Gets Auto Restarted
 ### Made By Kartik Singla
 
 
-# branded under PIMO
+### © PIMO
 
