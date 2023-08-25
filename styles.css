@@ -107,3 +107,17 @@ audio{
     background-color: black;
     color: black;
 }
+
+@media (max-height:850px) {
+    img{
+        height: 20vh;
+        width: auto;
+    }
+}
+
+@media (max-height:478px) {
+    img{
+        height: 15vh;
+        width: auto;
+    }
+}
