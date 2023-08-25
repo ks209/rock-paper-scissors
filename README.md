@@ -21,7 +21,7 @@ This is a basic Rock Paper Scissors game created as a web application. Players c
 
 ## Demo
 
-You can view a live demo of the game [here]((https://ks209.github.io/rock-paper-scissors/)).
+You can view a live demo of the game https://ks209.github.io/rock-paper-scissors/
 
 ## Features
 
