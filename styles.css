@@ -10,8 +10,8 @@ h2{
 }
 
 img{
-    height: 200px;
-    width: 300px;
+    height: 13vh;
+    width: 13vh;
 }
 
 main{
@@ -22,15 +22,19 @@ main{
 
 .title{
     display: flex;
-    justify-content: center;
-    gap: 1vmax;
+    justify-content: space-evenly;
     padding: 4vh;
     background-color: #1b3262;
     color: #5B9A8B;
 }
 
+.titlekid{
+    display: flex;
+    gap:1vw;
+}
+
 .bg{
-    height: 100%    
+    height: 90%;
 }
 
 .score{
@@ -66,7 +70,7 @@ main{
 
 .playerside{
     width: 50%;
-    height: fit-content;
+    height: 80%;
 }
 
 .playerside>div{
@@ -77,8 +81,10 @@ main{
 
 
 .playerside>div>img:hover{
-    height: 250px;
-    width: 350px;
+    height: 18vh;
+    width: 18vh;    
+    background-blend-mode: multiply;
+    background-color: #252B48;
 }
 
 .win{
@@ -104,20 +110,78 @@ main{
 
 audio{
     display: none;
-    background-color: black;
+    background-color: transparent;
     color: black;
 }
 
-@media (max-height:850px) {
+audio::-webkit-media-controls-panel{
+    background-color: #1b3262;
+    border: transparent;
+}
+
+.logo{
+    height: 4vh;
+    width: auto;
+}
+
+@media (max-height:810px) {
+    img{
+        height: 15vh;
+        width: auto;
+    }
+}
+
+@media (max-height:896px) {
     img{
         height: 20vh;
         width: auto;
+    }
+    h2,h1{
+        font-size: 1.5vh;
     }
 }
 
 @media (max-height:478px) {
     img{
         height: 15vh;
+        width: auto;
+    }
+    h2{
+        font-size: 0.1vh;
+    }
+}
+
+@media (max-height:667px) {
+    img{
+        height: 15vh;
+        width: 15vh;
+    }
+    h2{
+        font-size: 4vw;
+    }
+    .logo{
+        height: 3vh;
+        width: auto;
+    }
+    img::hover{
+        height: 12vh;
+        width: auto;
+    }
+}
+
+@media(max-height:916px){
+    img{
+        height: 10vh;
+        width: auto;
+    }
+    #computerscore #playerscore{
+        font-size: 1vh;
+    }
+    h1{
+        font-size: 2vh;
+    }
+    img::hover{
+        height: 12vh;
         width: auto;
     }
 }

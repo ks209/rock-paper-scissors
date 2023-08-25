@@ -1,6 +1,13 @@
+var audio = document.getElementById("myaudio");
+  audio.volume = 0.2;
 
+  function unmute(){
+    audio.muted= false ;
+    console.log("unmuted")
+  }
 
-
+  window.onload = unmute();
+  
 function getPlayerChoice() {
     var rock = document.getElementById("prock");
     var paper = document.getElementById("ppaper");
@@ -55,8 +62,9 @@ async function main() {
     var playerScore=0;
     var p = document.getElementById("playerscore");
     var c = document.getElementById("computerscore");
-    
-    for(let round=1;round<=5;round++){
+    let round=1;
+    while(playerScore<5 && computerScore<5){
+        round++;
         document.getElementById("cscissors").style.display = "none";
         document.getElementById("cpaper").style.display = "none";
         document.getElementById("crock").style.display = "none";
@@ -76,7 +84,8 @@ async function main() {
         console.error("Error:", error);
     }
 }
-console.log(":::::::::::::",playerScore,computerScore)
+
+console.log("Score",playerScore,computerScore)
 if(playerScore>computerScore){
     document.getElementById("pwin").style.display = "block";
     document.querySelector(".win").style.display="flex";
@@ -86,8 +95,8 @@ if(playerScore>computerScore){
 }else{
     document.querySelector(".win").style.display="block";
     document.getElementById("draw").style.display="flex";
-
 }
+setTimeout(() => location.reload(), 3000);
 }
 
 function playRound(playerChoice, computerChoice) {
